@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'icons-bits';
+  src:  url('fonts/icons-bits/icons-bits.eot?2mbo76');
+  src:  url('fonts/icons-bits/icons-bits.eot?2mbo76#iefix') format('embedded-opentype'),
+    url('fonts/icons-bits/icons-bits.ttf?2mbo76') format('truetype'),
+    url('fonts/icons-bits/icons-bits.woff?2mbo76') format('woff'),
+    url('fonts/icons-bits/icons-bits.svg?2mbo76#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons-bits' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-cable:before {
+  content: "\e908";
+}
+.icon-car:before {
+  content: "\e909";
+}
+.icon-computer:before {
+  content: "\e90a";
+}
+.icon-house:before {
+  content: "\e90b";
+}
+.icon-phone:before {
+  content: "\e90c";
+}
+.icon-robot:before {
+  content: "\e90d";
+}
+.icon-audio:before {
+  content: "\e90e";
+}
+.icon-menu:before {
+  content: "\e90f";
+}
+
+
+
+.icon-acer:before {
+  content: "\e902";
+}
+.icon-alcatel:before {
+  content: "\e903";
+}
+.icon-brother:before {
+  content: "\e904";
+}
+.icon-canon:before {
+  content: "\e905";
+}
+.icon-dell:before {
+  content: "\e906";
+}
+.icon-epson:before {
+  content: "\e907";
+}
+.icon-asus:before {
+  content: "\e901";
+}
+.icon-panasonic:before {
+  content: "\e900";
+}

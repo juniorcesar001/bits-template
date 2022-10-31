@@ -1,0 +1,1871 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="public/js/vendor/slick/slick.css" />
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+		<link rel="stylesheet" href="public/css/home.min.css" />
+		<title>Home - RVTech</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__top">
+				<div class="d-none d-md-block">
+					<img src="./public/img/header/img_topo.png" alt="Topo Bits">
+				</div>
+				<div class="d-block d-md-none">
+					<img src="./public/img/header/img_topo.png" alt="Topo Bits">
+				</div>
+			</div>
+			<div class="header__subtop">
+				<div class="container-fluid">
+					<ul class="header__subtop-first">
+						<li><a href="#"><i class="fab fa-whatsapp"></i>Chama no whats</a></li> | 
+						<li><a href="#"><i class="fas fa-user"></i>Minha Conta</a></li> | 
+						<li><a href="#"><i class="fas fa-box"></i>Meus Pedidos</a></li> | 
+						<li><a href="#"><i class="fas fa-phone-alt"></i>Fale Conosco</a></li>
+					</ul>
+					<!-- <ul class="header__subtop-buttons">
+						<li><a href="#">Visite nossa loja física</a></li>
+					</ul> -->
+				</div>
+			</div>
+			<div class="header__main">
+				<div class="header__main-desktop">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-12 col-md-3">
+								<div class="d-none d-md-block">
+									<img
+										src="./public/img/header/Logo_bits.png"
+										alt=""
+										class="header__main-desktop-logo"
+									/>
+								</div>
+								<div class="d-block d-md-none">
+									<img
+										src="./public/img/logo-mob.png"
+										alt=""
+										class="header__main-desktop-logo"
+									/>
+								</div>
+							</div>
+							<div class="col-12 col-md-6">
+								<div class="header__main-desktop-search">
+									<input type="text" />
+									<button><i class="fas fa-search"></i></button>
+								</div>
+							</div>
+							<div class="col-12 col-md-3">
+								<div class="d-flex">
+									<div class="header__main-desktop-login">
+										<a href="#">
+											<i class="fas fa-user"></i>
+											<span
+												>Entre ou <br />
+												Cadastre-se</span
+											>
+										</a>
+									</div>
+
+									<div class="d-flex header__main-desktop-cart cart">
+										<div class="cart-bt">
+											<span>0</span>
+											<i class="fas fa-shopping-cart fa-3x"></i>
+										</div>
+
+										<div class="d-none cart-total">
+											<div class="cart-total-item">
+												<img
+													src="./public/img/cart-header-product.webp"
+													alt="NOME_DO_PRODUTO"
+												/>
+												<div>
+													<h5 class="cart-total-item-product">
+														Camisa Lotto Cesare Azul
+													</h5>
+													<span class="cart-total-item-variant"
+														><b>Tamanho:</b> P</span
+													>
+													<span class="cart-total-item-qntd"
+														><b>Quantidade:</b> 1</span
+													>
+												</div>
+												<div>
+													<i class="fas fa-trash-alt"></i>
+													<span class="cart-total-item-price">R$ 32,90</span>
+												</div>
+											</div>
+
+											<div class="cart-total-subtotal">
+												<span>Subtotal: <b>R$ 132,80</b></span>
+											</div>
+
+											<div class="cart-total-finish">
+												<a
+													href="https://www.futfanatics.com.br/loja/carrinho.php?loja=311840"
+													>Finalizar compra</a
+												>
+											</div>
+										</div>
+
+										<span class="d-none cart-update"> ... </span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header__main-moblie">
+					<div class="d-flex">
+						<div class="header__main-moblie-bar">
+							<button><i class="fas fa-bars"></i></button>
+						</div>
+						<div class="header__main-moblie-logo">
+							<img src="./public/img/header/Logo_bits.png" alt="Logo" />
+						</div>
+						<div class="header__main-moblie-search">
+							<button><i class="fas fa-search"></i></button>
+						</div>
+						<div class="header__main-moblie-cart">
+							<button><i class="fas fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<div class="header__main-moblie-input d-none">
+						<div class="position-relative d-flex">
+							<div class="input">
+								<button class="header__main-moblie-input-search">
+									<i class="fas fa-search"></i>
+								</button>
+								<input type="text" />
+							</div>
+							
+							<button class="header__main-moblie-input-close">
+								<i class="fas fa-times"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__nav">
+				<nav class="header__nav-desk">
+					<ul>
+						<li>
+							<a href="#">
+                                <i class="icon-menu"></i>
+                                <span>Todas as categorias</span>
+                            </a>
+							<div class="child-container">
+								<div class="container">
+									<div class="row">
+										<div class="col-12 d-flex">
+											<div class="flex-grow-1 flex-column flex-wrap d-flex">
+												<ul class="column">
+													<li>
+														<a href="#">
+															<span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+														</a>
+														<ul>
+															<li>
+																<a href="#"><span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  </a>
+															</li>
+															<li>
+																<a href="#">
+																	<span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+																</a>
+																<ul>
+																	<li>
+																		<a href="#">
+																			<span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+																		</a>
+																	</li>
+																	<li>
+																		<a href="#">
+																			<span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+																		</a>
+																	</li>
+																</ul>
+															</li>
+														</ul>
+													</li>
+													<li>
+														<a href="#">
+															<span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+														</a>
+														<ul>
+															<li>
+																<a href="#"><span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  </a>
+															</li>
+															<li>
+																<a href="#">
+																	<span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+																</a>
+																<ul>
+																	<li>
+																		<a href="#">
+																			<span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+																		</a>
+																	</li>
+																	<li>
+																		<a href="#">
+																			<span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+																		</a>
+																	</li>
+																</ul>
+															</li>
+														</ul>
+													</li>
+													<li>
+														<a href="#">
+															<span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+														</a>
+														<ul>
+															<li>
+																<a href="#"><span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  </a>
+															</li>
+															<li>
+																<a href="#">
+																	<span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+																</a>
+																<ul>
+																	<li>
+																		<a href="#">
+																			<span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+																		</a>
+																	</li>
+																	<li>
+																		<a href="#">
+																			<span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+																		</a>
+																	</li>
+																</ul>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+											<div class="menu__showcase flex-shrink-0 d-none d-lg-block">
+												<div class="item">
+													<div class="item-box">
+														<a href="#">
+															<div class="item-thumb">
+																<span class="item-thumb-discount">
+																	<i class="fas fa-caret-down"></i>
+																	11%
+																</span>
+																<img src="./public/img/home/loading.gif" alt="Product" />
+															</div>
+															<div class="item-infos">
+																<h3>Capacete giro Scramp S de ciclismo infantil</h3>
+																<span class="item-infos-price">R$ 299,00</span>
+																<span class="item-infos-deadlines"
+																	>Em 9x de <b>R$33,32</b> sem juros ou <b>R$284,91</b> no
+																	boleto</span
+																>
+															</div>
+														</a>
+														<div class="item-buy">
+															<a href="#">COMPRAR</a>
+														</div>
+													</div>
+												</div>
+												<div class="item">
+													<div class="item-box">
+														<a href="#">
+															<div class="item-thumb">
+																<span class="item-thumb-discount">
+																	<i class="fas fa-caret-down"></i>
+																	11%
+																</span>
+																<img src="./public/img/home/loading.gif" alt="Product" />
+															</div>
+															<div class="item-infos">
+																<h3>Capacete giro Scramp S de ciclismo infantil</h3>
+																<span class="item-infos-price">R$ 299,00</span>
+																<span class="item-infos-deadlines"
+																	>Em 9x de <b>R$33,32</b> sem juros ou <b>R$284,91</b> no
+																	boleto</span
+																>
+															</div>
+														</a>
+														<div class="item-buy">
+															<a href="#">COMPRAR</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#">
+                                <i class="icon-audio"></i>
+                                <span>Audio & Vídeo</span>
+                            </a>
+							<div class="child-container">
+								<div class="container">
+									<div class="row">
+										<div class="col-12 d-flex">
+											<div class="flex-grow-1 flex-column flex-wrap d-flex">
+												<div class="column">
+													<ul class="column">
+														<li>
+															<a href="#">
+																<span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+															</a>
+															<ul>
+																<li>
+																	<a href="#"><span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  </a>
+																</li>
+																<li>
+																	<a href="#">
+																		<span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+																	</a>
+																	<ul>
+																		<li>
+																			<a href="#">
+																				<span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+																			</a>
+																		</li>
+																		<li>
+																			<a href="#">
+																				<span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+																			</a>
+																		</li>
+																	</ul>
+																</li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="flex-shrink-0 d-none d-lg-block">
+												<div class="menu-img">
+													<a
+														href="{{ settings.menu_loja_link }}"
+														target="{{ settings.menu_loja_link_target }}"
+													>
+														<img src="./public/img/header/thumb_menu.png" alt="" />
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#">
+                                <i class="icon-computer"></i>
+                                <span>Informática</span>
+                            </a>
+							<div class="child-container">
+								<div class="container">
+									<div class="row">
+										<div class="col-12 d-flex">
+											<div class="flex-grow-1 flex-column flex-wrap d-flex">
+												<ul class="column">
+													<li>
+                                                        <a href="#">
+                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+                                                        </a>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#"><span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+                                                                </a>
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+													</li>
+												</ul>
+              
+											</div>
+											<div class="flex-shrink-0 d-none d-lg-block">
+												<div class="menu-img">
+													<a
+														href="{{ settings.menu_loja_link }}"
+														target="{{ settings.menu_loja_link_target }}"
+													>
+														<img src="./public/img/header/thumb_menu.png" alt="" />
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#">
+                                <i class="icon-robot"></i>
+                                <span>Automação</span>
+                            </a>
+							<div class="child-container">
+								<div class="container">
+									<div class="row">
+										<div class="col-12 d-flex">
+											<div class="flex-grow-1 flex-column flex-wrap d-flex">
+												<ul class="column">
+													<li>
+                                                        <a href="#">
+                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+                                                        </a>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#"><span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+                                                                </a>
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+													</li>
+												</ul>
+              
+											</div>
+											<div class="flex-shrink-0 d-none d-lg-block">
+												<div class="menu-img">
+													<a
+														href="{{ settings.menu_loja_link }}"
+														target="{{ settings.menu_loja_link_target }}"
+													>
+														<img src="./public/img/header/thumb_menu.png" alt="" />
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#">
+                                <i class="icon-car"></i>
+                                <span>Automotivo</span>
+                            </a>
+							<div class="child-container">
+								<div class="container">
+									<div class="row">
+										<div class="col-12 d-flex">
+											<div class="flex-grow-1 flex-column flex-wrap d-flex">
+												<ul class="column">
+													<li>
+                                                        <a href="#">
+                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+                                                        </a>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#"><span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+                                                                </a>
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+													</li>
+												</ul>
+              
+											</div>
+											<div class="flex-shrink-0 d-none d-lg-block">
+												<div class="menu-img">
+													<a
+														href="{{ settings.menu_loja_link }}"
+														target="{{ settings.menu_loja_link_target }}"
+													>
+														<img src="./public/img/header/thumb_menu.png" alt="" />
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#">
+                                <i class="icon-cable"></i>
+                                <span>Cabos</span>
+                            </a>
+							<div class="child-container">
+								<div class="container">
+									<div class="row">
+										<div class="col-12 d-flex">
+											<div class="flex-grow-1 flex-column flex-wrap d-flex">
+												<ul class="column">
+													<li>
+                                                        <a href="#">
+                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+                                                        </a>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#"><span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+                                                                </a>
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+													</li>
+												</ul>
+              
+											</div>
+											<div class="flex-shrink-0 d-none d-lg-block">
+												<div class="menu-img">
+													<a
+														href="{{ settings.menu_loja_link }}"
+														target="{{ settings.menu_loja_link_target }}"
+													>
+														<img src="./public/img/header/thumb_menu.png" alt="" />
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#">
+                                <i class="icon-house"></i>
+                                <span>Casa & Cozinha</span>
+                            </a>
+							<div class="child-container">
+								<div class="container">
+									<div class="row">
+										<div class="col-12 d-flex">
+											<div class="flex-grow-1 flex-column flex-wrap d-flex">
+												<ul class="column">
+													<li>
+                                                        <a href="#">
+                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+                                                        </a>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#"><span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+                                                                </a>
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+													</li>
+												</ul>
+              
+											</div>
+											<div class="flex-shrink-0 d-none d-lg-block">
+												<div class="menu-img">
+													<a
+														href="{{ settings.menu_loja_link }}"
+														target="{{ settings.menu_loja_link_target }}"
+													>
+														<img src="./public/img/header/thumb_menu.png" alt="" />
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#">
+                                <i class="icon-phone"></i>
+                                <span>Celular e Telefonia</span>
+                            </a>
+							<div class="child-container">
+								<div class="container">
+									<div class="row">
+										<div class="col-12 d-flex">
+											<div class="flex-grow-1 flex-column flex-wrap d-flex">
+												<ul class="column">
+													<li>
+                                                        <a href="#">
+                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+                                                        </a>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#"><span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+                                                                </a>
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+													</li>
+												</ul>
+              
+											</div>
+											<div class="flex-shrink-0 d-none d-lg-block">
+												<div class="menu-img">
+													<a
+														href="{{ settings.menu_loja_link }}"
+														target="{{ settings.menu_loja_link_target }}"
+													>
+														<img src="./public/img/header/thumb_menu.png" alt="" />
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</nav>
+				<nav class="header__nav-moblie">
+					<div class="header__nav-moblie-top">
+						<div class="d-flex header__nav-moblie-top-user">
+							<div class="item-user">
+								<a href="#">
+									<span><i class="fas fa-user"></i></span>
+								</a>
+							</div>
+							<div class="item-welcome">
+								<span>Bem-Vindo!</span>
+								<a href="#">Entre ou Cadastre-se</a>
+							</div>
+						</div>
+						<div class="d-flex header__nav-moblie-top-links">
+							<div class="item-account">
+								<a href="#">
+									<span>Minha Conta</span>
+									<i class="fas fa-angle-right"></i>
+								</a>
+							</div>
+							<div class="item-account">
+								<a href="#">
+									<span>Meus Pedidos</span>
+									<i class="fas fa-angle-right"></i>
+								</a>
+							</div>
+						</div>
+						<button class="header__nav-moblie-top-close">
+							<i class="fas fa-times"></i>
+						</button>
+					</div>
+					<div class="header__nav-moblie-menu">
+						<ul class="menu">
+							<li>
+								<a href="#">
+									<span>Masculino</span>
+									<i class="fas fa-angle-right"></i>
+								</a>
+								<ul class="sub-menu">
+									<li>
+										<div class="see-all">
+											<span class="back">
+												<i class="fas fa-angle-left"></i></i>Voltar
+											</span>
+											<span class="all">
+												<a href="#">Ver Todos</a>
+											</span>
+										</div>
+									</li>
+		
+									<li>
+										<a href="">
+											<span>Calças</span>
+											<i class="fas fa-angle-right"></i>
+										</a>
+										<ul class="col-menu">
+											<li>
+												<div class="see-all">
+													<span class="back">
+														<i class="fas fa-angle-left"></i>Voltar
+													</span>
+													<span class="all">
+														<a href="#">Ver Todos</a>
+													</span>
+												</div>
+											</li>
+											<li>
+												<a href="#">
+													<span>Calça de Sarja</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span>Calça de Sarja</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span>Calça de Sarja</span>
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+
+							<li>
+								<a href="#">
+									<span>Feminino</span>
+									<i class="fas fa-angle-right"></i>
+								</a>
+							</li>
+
+							<li>
+								<a href="#">
+									<span>Cowboys Kids</span>
+									<i class="fas fa-angle-right"></i>
+								</a>
+							</li>
+
+							<li>
+								<a href="#">
+									<span>Decoração</span>
+									<i class="fas fa-angle-right"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Selaria</span>
+									<i class="fas fa-angle-right"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Look Família</span>
+									<i class="fas fa-angle-right"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<main class="home">
+			<section class="home__slide">
+				<div class="item">
+					<div class="d-none d-md-block">
+						<img src="./public/img/home/slide-home.png" alt="Slide 1" />
+					</div>
+					<div class="d-block d-md-none">
+						<img src="./public/img/home/slide-home-mob.png" alt="Slide 1" />
+					</div>
+				</div>
+				<div class="item">
+					<div class="d-none d-md-block">
+						<img src="./public/img/home/slide-home.png" alt="Slide 1" />
+					</div>
+					<div class="d-block d-md-none">
+						<img src="./public/img/home/slide-home-mob.png" alt="Slide 1" />
+					</div>
+				</div>
+			</section>
+
+			<section class="home__infos box_info">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-12 col-md-3">
+							<div class="home__infos-box d-flex">
+								<img src="./public/img/home/price-tag.png" alt="" />
+								<div>
+									<h4>10% DE DESCONTO</h4>
+									<p>Nos pagamentos à vista</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-3">
+							<div class="home__infos-box d-flex">
+								<img src="./public/img/home/credit-card.png" alt="" />
+								<div>
+									<h4>PARCELAMENTO</h4>
+									<p>Em até 10X sem juros</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-3">
+							<div class="home__infos-box d-flex">
+								<img src="./public/img/home/security.png" alt="" />
+								<div>
+									<h4>LOJA SEGURA</h4>
+									<p>Faça compras com segurança</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-3">
+							<div class="home__infos-box d-flex">
+								<img src="./public/img/home/fast-delivery.png" alt="" />
+								<div>
+									<h4>ENTREGA GARANTIDA</h4>
+									<p>Para todo o Brasil</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+				
+			<div class="container-fluid">
+
+				<section class="home__slidemedium">
+					<div class="home__slidemedium-slide">
+						<div class="item">
+							<div class="d-none d-md-block">
+								<img src="./public/img/home/banner.png" alt="">
+							</div>
+							<div class="d-block d-md-none">
+								<img src="./public/img/home/banner-medium.webp" alt="">
+							</div>
+						</div>
+						<div class="item">
+							<div class="d-none d-md-block">
+								<img src="./public/img/home/banner.png" alt="">
+							</div>
+							<div class="d-block d-md-none">
+								<img src="./public/img/home/banner-medium.webp" alt="">
+							</div>
+						</div>
+						<div class="item">
+							<div class="d-none d-md-block">
+								<img src="./public/img/home/banner.png" alt="">
+							</div>
+							<div class="d-block d-md-none">
+								<img src="./public/img/home/banner-medium.webp" alt="">
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="home__showcases showcases">
+					<h2 class="home__showcases-title">O QUE TODO MUNDO ESTÁ COMPRANDO</h2>
+					<div class="home__showcases-slide">
+						<div class="item">
+							<div class="item-box">
+								<a href="#">
+									<div class="item-thumb">
+										<span class="item-thumb-discount">
+											<i class="fas fa-caret-down"></i>
+											11%
+										</span>
+										<img src="./public/img/home/loading.gif" alt="Product" />
+									</div>
+									<div class="item-infos">
+										<h3>Capacete giro Scramp S de ciclismo infantil</h3>
+										<span class="item-infos-price">R$ 299,00</span>
+										<span class="item-infos-deadlines"
+											>Em 9x de <b>R$33,32</b> sem juros ou <b>R$284,91</b> no
+											boleto</span
+										>
+									</div>
+								</a>
+								<div class="item-buy">
+									<a href="#">COMPRAR</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="item-box">
+								<a href="#">
+									<div class="item-thumb">
+										<span class="item-thumb-discount">
+											<i class="fas fa-caret-down"></i>
+											11%
+										</span>
+										<img src="./public/img/home/loading.gif" alt="Product" />
+									</div>
+									<div class="item-infos">
+										<h3>Capacete giro Scramp S de ciclismo infantil</h3>
+										<span class="item-infos-price">R$ 299,00</span>
+										<span class="item-infos-deadlines"
+											>Em 9x de <b>R$33,32</b> sem juros ou <b>R$284,91</b> no
+											boleto</span
+										>
+									</div>
+								</a>
+								<div class="item-buy">
+									<a href="#">COMPRAR</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="item-box">
+								<a href="#">
+									<div class="item-thumb">
+										<span class="item-thumb-discount">
+											<i class="fas fa-caret-down"></i>
+											11%
+										</span>
+										<img src="./public/img/home/loading.gif" alt="Product" />
+									</div>
+									<div class="item-infos">
+										<h3>Capacete giro Scramp S de ciclismo infantil</h3>
+										<span class="item-infos-price">R$ 299,00</span>
+										<span class="item-infos-deadlines"
+											>Em 9x de <b>R$33,32</b> sem juros ou <b>R$284,91</b> no
+											boleto</span
+										>
+									</div>
+								</a>
+								<div class="item-buy">
+									<a href="#">COMPRAR</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="item-box">
+								<a href="#">
+									<div class="item-thumb">
+										<span class="item-thumb-discount">
+											<i class="fas fa-caret-down"></i>
+											11%
+										</span>
+										<img src="./public/img/home/loading.gif" alt="Product" />
+									</div>
+									<div class="item-infos">
+										<h3>Capacete giro Scramp S de ciclismo infantil</h3>
+										<span class="item-infos-price">R$ 299,00</span>
+										<span class="item-infos-deadlines"
+											>Em 9x de <b>R$33,32</b> sem juros ou <b>R$284,91</b> no
+											boleto</span
+										>
+									</div>
+								</a>
+								<div class="item-buy">
+									<a href="#">COMPRAR</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="item-box">
+								<a href="#">
+									<div class="item-thumb">
+										<span class="item-thumb-discount">
+											<i class="fas fa-caret-down"></i>
+											11%
+										</span>
+										<img src="./public/img/home/loading.gif" alt="Product" />
+									</div>
+									<div class="item-infos">
+										<h3>Capacete giro Scramp S de ciclismo infantil</h3>
+										<span class="item-infos-price">R$ 299,00</span>
+										<span class="item-infos-deadlines"
+											>Em 9x de <b>R$33,32</b> sem juros ou <b>R$284,91</b> no
+											boleto</span
+										>
+									</div>
+								</a>
+								<div class="item-buy">
+									<a href="#">COMPRAR</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="item-box">
+								<a href="#">
+									<div class="item-thumb">
+										<span class="item-thumb-discount">
+											<i class="fas fa-caret-down"></i>
+											11%
+										</span>
+										<img src="./public/img/home/loading.gif" alt="Product" />
+									</div>
+									<div class="item-infos">
+										<h3>Capacete giro Scramp S de ciclismo infantil</h3>
+										<span class="item-infos-price">R$ 299,00</span>
+										<span class="item-infos-deadlines"
+											>Em 9x de <b>R$33,32</b> sem juros ou <b>R$284,91</b> no
+											boleto</span
+										>
+									</div>
+								</a>
+								<div class="item-buy">
+									<a href="#">COMPRAR</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="item-box">
+								<a href="#">
+									<div class="item-thumb">
+										<span class="item-thumb-discount">
+											<i class="fas fa-caret-down"></i>
+											11%
+										</span>
+										<img src="./public/img/home/loading.gif" alt="Product" />
+									</div>
+									<div class="item-infos">
+										<h3>Capacete giro Scramp S de ciclismo infantil</h3>
+										<span class="item-infos-price">R$ 299,00</span>
+										<span class="item-infos-deadlines"
+											>Em 9x de <b>R$33,32</b> sem juros ou <b>R$284,91</b> no
+											boleto</span
+										>
+									</div>
+								</a>
+								<div class="item-buy">
+									<a href="#">COMPRAR</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="home__categories categories">
+					<div class="home__categories-slide">
+						<div class="item">
+							<a href="#">
+								<img src="./public/img/home/badges.png" alt="Categoria 1" />
+								<span>Categoria 1</span>
+							</a>
+						</div>
+
+						<div class="item">
+							<a href="#">
+								<img src="./public/img/home/badges.png" alt="Categoria 1" />
+								<span>Categoria 1</span>
+							</a>
+						</div>
+						<div class="item">
+							<a href="#">
+								<img src="./public/img/home/badges.png" alt="Categoria 1" />
+								<span>Categoria 1</span>
+							</a>
+						</div>
+						<div class="item">
+							<a href="#">
+								<img src="./public/img/home/badges.png" alt="Categoria 1" />
+								<span>Categoria 1</span>
+							</a>
+						</div>
+						<div class="item">
+							<a href="#">
+								<img src="./public/img/home/badges.png" alt="Categoria 1" />
+								<span>Categoria 1</span>
+							</a>
+						</div>
+						<div class="item">
+							<a href="#">
+								<img src="./public/img/home/badges.png" alt="Categoria 1" />
+								<span>Categoria 1</span>
+							</a>
+						</div>
+						<div class="item">
+							<a href="#">
+								<img src="./public/img/home/badges.png" alt="Categoria 1" />
+								<span>Categoria 1</span>
+							</a>
+						</div>
+						<div class="item">
+							<a href="#">
+								<img src="./public/img/home/badges.png" alt="Categoria 1" />
+								<span>Categoria 1</span>
+							</a>
+						</div>
+						<div class="item">
+							<a href="#">
+								<img src="./public/img/home/badges.png" alt="Categoria 1" />
+								<span>Categoria 1</span>
+							</a>
+						</div>
+						<div class="item">
+							<a href="#">
+								<img src="./public/img/home/badges.png" alt="Categoria 1" />
+								<span>Categoria 1</span>
+							</a>
+						</div>
+					</div>
+				</section>
+
+				<section class="home__showcases showcases">
+					<h2 class="home__showcases-title">O QUE TODO MUNDO ESTÁ COMPRANDO</h2>
+					<div class="home__showcases-slide">
+						<div class="item">
+							<div class="item-box">
+								<a href="#">
+									<div class="item-thumb">
+										<span class="item-thumb-discount">
+											<i class="fas fa-caret-down"></i>
+											11%
+										</span>
+										<img src="./public/img/home/loading.gif" alt="Product" />
+									</div>
+									<div class="item-infos">
+										<h3>Capacete giro Scramp S de ciclismo infantil</h3>
+										<span class="item-infos-price">R$ 299,00</span>
+										<span class="item-infos-deadlines"
+											>Em 9x de <b>R$33,32</b> sem juros ou <b>R$284,91</b> no
+											boleto</span
+										>
+									</div>
+								</a>
+								<div class="item-buy">
+									<a href="#">COMPRAR</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="item-box">
+								<a href="#">
+									<div class="item-thumb">
+										<span class="item-thumb-discount">
+											<i class="fas fa-caret-down"></i>
+											11%
+										</span>
+										<img src="./public/img/home/loading.gif" alt="Product" />
+									</div>
+									<div class="item-infos">
+										<h3>Capacete giro Scramp S de ciclismo infantil</h3>
+										<span class="item-infos-price">R$ 299,00</span>
+										<span class="item-infos-deadlines"
+											>Em 9x de <b>R$33,32</b> sem juros ou <b>R$284,91</b> no
+											boleto</span
+										>
+									</div>
+								</a>
+								<div class="item-buy">
+									<a href="#">COMPRAR</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="item-box">
+								<a href="#">
+									<div class="item-thumb">
+										<span class="item-thumb-discount">
+											<i class="fas fa-caret-down"></i>
+											11%
+										</span>
+										<img src="./public/img/home/loading.gif" alt="Product" />
+									</div>
+									<div class="item-infos">
+										<h3>Capacete giro Scramp S de ciclismo infantil</h3>
+										<span class="item-infos-price">R$ 299,00</span>
+										<span class="item-infos-deadlines"
+											>Em 9x de <b>R$33,32</b> sem juros ou <b>R$284,91</b> no
+											boleto</span
+										>
+									</div>
+								</a>
+								<div class="item-buy">
+									<a href="#">COMPRAR</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="item-box">
+								<a href="#">
+									<div class="item-thumb">
+										<span class="item-thumb-discount">
+											<i class="fas fa-caret-down"></i>
+											11%
+										</span>
+										<img src="./public/img/home/loading.gif" alt="Product" />
+									</div>
+									<div class="item-infos">
+										<h3>Capacete giro Scramp S de ciclismo infantil</h3>
+										<span class="item-infos-price">R$ 299,00</span>
+										<span class="item-infos-deadlines"
+											>Em 9x de <b>R$33,32</b> sem juros ou <b>R$284,91</b> no
+											boleto</span
+										>
+									</div>
+								</a>
+								<div class="item-buy">
+									<a href="#">COMPRAR</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="item-box">
+								<a href="#">
+									<div class="item-thumb">
+										<span class="item-thumb-discount">
+											<i class="fas fa-caret-down"></i>
+											11%
+										</span>
+										<img src="./public/img/home/loading.gif" alt="Product" />
+									</div>
+									<div class="item-infos">
+										<h3>Capacete giro Scramp S de ciclismo infantil</h3>
+										<span class="item-infos-price">R$ 299,00</span>
+										<span class="item-infos-deadlines"
+											>Em 9x de <b>R$33,32</b> sem juros ou <b>R$284,91</b> no
+											boleto</span
+										>
+									</div>
+								</a>
+								<div class="item-buy">
+									<a href="#">COMPRAR</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="item-box">
+								<a href="#">
+									<div class="item-thumb">
+										<span class="item-thumb-discount">
+											<i class="fas fa-caret-down"></i>
+											11%
+										</span>
+										<img src="./public/img/home/loading.gif" alt="Product" />
+									</div>
+									<div class="item-infos">
+										<h3>Capacete giro Scramp S de ciclismo infantil</h3>
+										<span class="item-infos-price">R$ 299,00</span>
+										<span class="item-infos-deadlines"
+											>Em 9x de <b>R$33,32</b> sem juros ou <b>R$284,91</b> no
+											boleto</span
+										>
+									</div>
+								</a>
+								<div class="item-buy">
+									<a href="#">COMPRAR</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="item-box">
+								<a href="#">
+									<div class="item-thumb">
+										<span class="item-thumb-discount">
+											<i class="fas fa-caret-down"></i>
+											11%
+										</span>
+										<img src="./public/img/home/loading.gif" alt="Product" />
+									</div>
+									<div class="item-infos">
+										<h3>Capacete giro Scramp S de ciclismo infantil</h3>
+										<span class="item-infos-price">R$ 299,00</span>
+										<span class="item-infos-deadlines"
+											>Em 9x de <b>R$33,32</b> sem juros ou <b>R$284,91</b> no
+											boleto</span
+										>
+									</div>
+								</a>
+								<div class="item-buy">
+									<a href="#">COMPRAR</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<section class="home__full_banner">
+				<a href="#">
+					<img src="./public/img/home/bannerFull.png" alt="Banner" />
+				</a>
+			</section>
+
+			<div class="container-fluid">
+				<section class="home__showcases showcases">
+					<h2 class="home__showcases-title">O QUE TODO MUNDO ESTÁ COMPRANDO</h2>
+					<div class="home__showcases-slide">
+						<div class="item">
+							<div class="item-box">
+								<a href="#">
+									<div class="item-thumb">
+										<span class="item-thumb-discount">
+											<i class="fas fa-caret-down"></i>
+											11%
+										</span>
+										<img src="./public/img/home/loading.gif" alt="Product" />
+									</div>
+									<div class="item-infos">
+										<h3>Capacete giro Scramp S de ciclismo infantil</h3>
+										<span class="item-infos-price">R$ 299,00</span>
+										<span class="item-infos-deadlines"
+											>Em 9x de <b>R$33,32</b> sem juros ou <b>R$284,91</b> no
+											boleto</span
+										>
+									</div>
+								</a>
+								<div class="item-buy">
+									<a href="#">COMPRAR</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="item-box">
+								<a href="#">
+									<div class="item-thumb">
+										<span class="item-thumb-discount">
+											<i class="fas fa-caret-down"></i>
+											11%
+										</span>
+										<img src="./public/img/home/loading.gif" alt="Product" />
+									</div>
+									<div class="item-infos">
+										<h3>Capacete giro Scramp S de ciclismo infantil</h3>
+										<span class="item-infos-price">R$ 299,00</span>
+										<span class="item-infos-deadlines"
+											>Em 9x de <b>R$33,32</b> sem juros ou <b>R$284,91</b> no
+											boleto</span
+										>
+									</div>
+								</a>
+								<div class="item-buy">
+									<a href="#">COMPRAR</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="item-box">
+								<a href="#">
+									<div class="item-thumb">
+										<span class="item-thumb-discount">
+											<i class="fas fa-caret-down"></i>
+											11%
+										</span>
+										<img src="./public/img/home/loading.gif" alt="Product" />
+									</div>
+									<div class="item-infos">
+										<h3>Capacete giro Scramp S de ciclismo infantil</h3>
+										<span class="item-infos-price">R$ 299,00</span>
+										<span class="item-infos-deadlines"
+											>Em 9x de <b>R$33,32</b> sem juros ou <b>R$284,91</b> no
+											boleto</span
+										>
+									</div>
+								</a>
+								<div class="item-buy">
+									<a href="#">COMPRAR</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="item-box">
+								<a href="#">
+									<div class="item-thumb">
+										<span class="item-thumb-discount">
+											<i class="fas fa-caret-down"></i>
+											11%
+										</span>
+										<img src="./public/img/home/loading.gif" alt="Product" />
+									</div>
+									<div class="item-infos">
+										<h3>Capacete giro Scramp S de ciclismo infantil</h3>
+										<span class="item-infos-price">R$ 299,00</span>
+										<span class="item-infos-deadlines"
+											>Em 9x de <b>R$33,32</b> sem juros ou <b>R$284,91</b> no
+											boleto</span
+										>
+									</div>
+								</a>
+								<div class="item-buy">
+									<a href="#">COMPRAR</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="item-box">
+								<a href="#">
+									<div class="item-thumb">
+										<span class="item-thumb-discount">
+											<i class="fas fa-caret-down"></i>
+											11%
+										</span>
+										<img src="./public/img/home/loading.gif" alt="Product" />
+									</div>
+									<div class="item-infos">
+										<h3>Capacete giro Scramp S de ciclismo infantil</h3>
+										<span class="item-infos-price">R$ 299,00</span>
+										<span class="item-infos-deadlines"
+											>Em 9x de <b>R$33,32</b> sem juros ou <b>R$284,91</b> no
+											boleto</span
+										>
+									</div>
+								</a>
+								<div class="item-buy">
+									<a href="#">COMPRAR</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="item-box">
+								<a href="#">
+									<div class="item-thumb">
+										<span class="item-thumb-discount">
+											<i class="fas fa-caret-down"></i>
+											11%
+										</span>
+										<img src="./public/img/home/loading.gif" alt="Product" />
+									</div>
+									<div class="item-infos">
+										<h3>Capacete giro Scramp S de ciclismo infantil</h3>
+										<span class="item-infos-price">R$ 299,00</span>
+										<span class="item-infos-deadlines"
+											>Em 9x de <b>R$33,32</b> sem juros ou <b>R$284,91</b> no
+											boleto</span
+										>
+									</div>
+								</a>
+								<div class="item-buy">
+									<a href="#">COMPRAR</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="item-box">
+								<a href="#">
+									<div class="item-thumb">
+										<span class="item-thumb-discount">
+											<i class="fas fa-caret-down"></i>
+											11%
+										</span>
+										<img src="./public/img/home/loading.gif" alt="Product" />
+									</div>
+									<div class="item-infos">
+										<h3>Capacete giro Scramp S de ciclismo infantil</h3>
+										<span class="item-infos-price">R$ 299,00</span>
+										<span class="item-infos-deadlines"
+											>Em 9x de <b>R$33,32</b> sem juros ou <b>R$284,91</b> no
+											boleto</span
+										>
+									</div>
+								</a>
+								<div class="item-buy">
+									<a href="#">COMPRAR</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="home__showcases showcases pt-5">
+					<h2 class="home__showcases-title">O QUE TODO MUNDO ESTÁ COMPRANDO</h2>
+					<div class="home__showcases-slide">
+						<div class="item">
+							<div class="item-box">
+								<a href="#">
+									<div class="item-thumb">
+										<span class="item-thumb-discount">
+											<i class="fas fa-caret-down"></i>
+											11%
+										</span>
+										<img src="./public/img/home/loading.gif" alt="Product" />
+									</div>
+									<div class="item-infos">
+										<h3>Capacete giro Scramp S de ciclismo infantil</h3>
+										<span class="item-infos-price">R$ 299,00</span>
+										<span class="item-infos-deadlines"
+											>Em 9x de <b>R$33,32</b> sem juros ou <b>R$284,91</b> no
+											boleto</span
+										>
+									</div>
+								</a>
+								<div class="item-buy">
+									<a href="#">COMPRAR</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="item-box">
+								<a href="#">
+									<div class="item-thumb">
+										<span class="item-thumb-discount">
+											<i class="fas fa-caret-down"></i>
+											11%
+										</span>
+										<img src="./public/img/home/loading.gif" alt="Product" />
+									</div>
+									<div class="item-infos">
+										<h3>Capacete giro Scramp S de ciclismo infantil</h3>
+										<span class="item-infos-price">R$ 299,00</span>
+										<span class="item-infos-deadlines"
+											>Em 9x de <b>R$33,32</b> sem juros ou <b>R$284,91</b> no
+											boleto</span
+										>
+									</div>
+								</a>
+								<div class="item-buy">
+									<a href="#">COMPRAR</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="item-box">
+								<a href="#">
+									<div class="item-thumb">
+										<span class="item-thumb-discount">
+											<i class="fas fa-caret-down"></i>
+											11%
+										</span>
+										<img src="./public/img/home/loading.gif" alt="Product" />
+									</div>
+									<div class="item-infos">
+										<h3>Capacete giro Scramp S de ciclismo infantil</h3>
+										<span class="item-infos-price">R$ 299,00</span>
+										<span class="item-infos-deadlines"
+											>Em 9x de <b>R$33,32</b> sem juros ou <b>R$284,91</b> no
+											boleto</span
+										>
+									</div>
+								</a>
+								<div class="item-buy">
+									<a href="#">COMPRAR</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="item-box">
+								<a href="#">
+									<div class="item-thumb">
+										<span class="item-thumb-discount">
+											<i class="fas fa-caret-down"></i>
+											11%
+										</span>
+										<img src="./public/img/home/loading.gif" alt="Product" />
+									</div>
+									<div class="item-infos">
+										<h3>Capacete giro Scramp S de ciclismo infantil</h3>
+										<span class="item-infos-price">R$ 299,00</span>
+										<span class="item-infos-deadlines"
+											>Em 9x de <b>R$33,32</b> sem juros ou <b>R$284,91</b> no
+											boleto</span
+										>
+									</div>
+								</a>
+								<div class="item-buy">
+									<a href="#">COMPRAR</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="item-box">
+								<a href="#">
+									<div class="item-thumb">
+										<span class="item-thumb-discount">
+											<i class="fas fa-caret-down"></i>
+											11%
+										</span>
+										<img src="./public/img/home/loading.gif" alt="Product" />
+									</div>
+									<div class="item-infos">
+										<h3>Capacete giro Scramp S de ciclismo infantil</h3>
+										<span class="item-infos-price">R$ 299,00</span>
+										<span class="item-infos-deadlines"
+											>Em 9x de <b>R$33,32</b> sem juros ou <b>R$284,91</b> no
+											boleto</span
+										>
+									</div>
+								</a>
+								<div class="item-buy">
+									<a href="#">COMPRAR</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="item-box">
+								<a href="#">
+									<div class="item-thumb">
+										<span class="item-thumb-discount">
+											<i class="fas fa-caret-down"></i>
+											11%
+										</span>
+										<img src="./public/img/home/loading.gif" alt="Product" />
+									</div>
+									<div class="item-infos">
+										<h3>Capacete giro Scramp S de ciclismo infantil</h3>
+										<span class="item-infos-price">R$ 299,00</span>
+										<span class="item-infos-deadlines"
+											>Em 9x de <b>R$33,32</b> sem juros ou <b>R$284,91</b> no
+											boleto</span
+										>
+									</div>
+								</a>
+								<div class="item-buy">
+									<a href="#">COMPRAR</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="item-box">
+								<a href="#">
+									<div class="item-thumb">
+										<span class="item-thumb-discount">
+											<i class="fas fa-caret-down"></i>
+											11%
+										</span>
+										<img src="./public/img/home/loading.gif" alt="Product" />
+									</div>
+									<div class="item-infos">
+										<h3>Capacete giro Scramp S de ciclismo infantil</h3>
+										<span class="item-infos-price">R$ 299,00</span>
+										<span class="item-infos-deadlines"
+											>Em 9x de <b>R$33,32</b> sem juros ou <b>R$284,91</b> no
+											boleto</span
+										>
+									</div>
+								</a>
+								<div class="item-buy">
+									<a href="#">COMPRAR</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- <section class="home__brands">
+					<div class="home__brands-slide">
+						<div class="item">
+							<a class="icon-acer" href="#"></a>
+						</div>
+						<div class="item">
+							<a class="icon-alcatel" href="#"></a>
+						</div>
+						<div class="item">
+							<a class="icon-brother" href="#"></a>
+						</div>
+						<div class="item">
+							<a class="icon-canon" href="#"></a>
+						</div>
+						<div class="item">
+							<a class="icon-dell" href="#"></a>
+						</div>
+						<div class="item">
+							<a class="icon-epson" href="#"></a>
+						</div>
+						<div class="item">
+							<a class="icon-asus" href="#"></a>
+						</div>
+						<div class="item">
+							<a class="icon-panasonic" href="#"></a>
+						</div>
+					</div>
+				</section> -->
+			</div>
+
+			<br>
+			<br>
+
+			<section class="home__prefooter">
+				<div class="container-fluid">
+					<div class="d-flex">
+						<div class="item item-social">
+							<div class="item-icon"><img src="./public/img/home/whats.png" alt=""></div>
+							<div class="item-text">(18)3223-1000</div>
+						</div>
+						<div class="item">
+							<div class="item-icon"><img src="./public/img/home/face.png" alt=""></div>
+							<div class="item-text">/bits.com.br</div>
+						</div>
+						<div class="item">
+							<div class="item-icon"><img src="./public/img/home/insta.png" alt=""></div>
+							<div class="item-text">/lojabits</div>
+						</div>
+						<div class="item item-reclame">
+							<div class="item-icon"><img src="./public/img/home/reclame.png" alt=""></div>
+							<div class="item-text">
+								<h5>Ótimo</h5>
+								<img src="./public/img/home/logo-reclame.png" alt="">
+								<span class="item-text-available">
+									<b>9.9</b>
+									<sup>/10</sup>
+								</span>
+							</div>
+						</div>
+						<div class="item item-security">
+							<span class="item-icon"><img src="./public/img/home/security_1.png" alt=""></span>
+							<span class="item-text">Compra segura
+								<b>SITE PROTEGIDO</b>
+							</span>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12 col-md-3">
+						<ul class="footer__column">
+							<li class="footer__column-title">Conteúdo</li>
+							<li class="footer__column-link">
+								<a href="#">Sobre a AquiTem Barato</a>
+							</li>
+							<li class="footer__column-link"><a href="#">Como Comprar</a></li>
+							<li class="footer__column-link"><a href="#">Frete e Envios</a></li>
+							<li class="footer__column-link"><a href="#">Pagamentos</a></li>
+							<li class="footer__column-link">
+								<a href="#">Política de Trocas</a>
+							</li>
+							<li class="footer__column-link"><a href="#">Privacidade</a></li>
+							<li class="footer__column-link"><a href="#">Fale Conosco</a></li>
+						</ul>
+					</div>
+					<div class="col-12 col-md-3">
+						<ul class="footer__column">
+							<li class="footer__column-title">Atendimento</li>
+							<li class="footer__column-link">
+								<a href="#">
+									<i class="fas fa-clock fa-1x"></i>
+									<span>Segunda a Sexta-feira, das 8h às 18h</span>
+								</a>
+							</li>
+
+							<li class="footer__column-link">
+								<a href="#">
+									<i class="fas fa-phone"></i>
+									<span>(18) 3223-7041</span>
+								</a>
+							</li>
+							<li class="footer__column-link">
+								<a href="#">
+									<i class="fab fa-whatsapp"></i>
+									<span>(18) 99694-2619</span>
+								</a>
+							</li>
+							<li class="footer__column-link">
+								<a href="#">
+									<i class="fas fa-envelope"></i>
+									<span>sac@xxxxx.com.br</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-12 col-md-3">
+						<ul class="footer__column">
+							<li class="footer__column-title">Minha Conta</li>
+
+							<li class="footer__column-link">
+								<a href="#">Criar uma conta</a>
+							</li>
+							<li class="footer__column-link"><a href="#">Minha Conta</a></li>
+							<li class="footer__column-link"><a href="#">Meus Pedidos</a></li>
+						</ul>
+
+						<ul class="footer__column">
+							<li class="footer__column-title">Formas de Pagamento</li>
+
+							<img src="./public/img/formas-pagamento.png" alt=".." />
+						</ul>
+					</div>
+					<div class="col-12 col-md-3">
+						<ul class="footer__column newsletter">
+							<li class="footer__column-title">APROVEITE NOSSAS PROMOÇÕES!</li>
+							<p>Cadastre seu e-mail e receba ofertas exclusivas</p>
+							<form action="#">
+								<input type="text" class="form-control" placeholder="Nome">
+								<input type="email" class="form-control" placeholder="Email">
+								<button type="submit">Assinar</button>
+							</form>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div class="blurry"></div>
+
+		<script src="public/js/vendor/jquery-2.2.1.min.js"></script>
+		<script src="public/js/vendor/bootstrap-4.4.1/bootstrap.min.js"></script>
+		<script src="public/js/vendor/slick/slick.min.js"></script>
+		<script src="public/js/vendor/fontawesome-5.0.10/js/all.js"></script>
+		<script src="public/js/home.min.js"></script>
+	</body>
+</html>
